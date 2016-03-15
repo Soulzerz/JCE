@@ -40,15 +40,16 @@ public class ContextoPartidoTest {
     }
 
     /**
-     * Test of insertar method, of class ContextoPartido.
+     * Test of seleccionarTodos method, of class ContextoPartido.
      */
     @Test
-    public void testInsertar() {
-        System.out.println("insertar");
-        Partido o = new Partido();
-        o.setNombre("PRD");
-        ContextoPartido instance = new ContextoPartido("hibernateMySQL.cfg.xml");
-        instance.insertar(o);
+    public void testSeleccionarTodos() {
+        System.out.println("seleccionarTodos");
+        ContextoPartido instance = new ContextoPartido();
+        List<Partido> expResult = instance.seleccionarTodos();
+        List<Partido> result = instance.seleccionarTodos();
+        assertEquals(expResult, result);
+        
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

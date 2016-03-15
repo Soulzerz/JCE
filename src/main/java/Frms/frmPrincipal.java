@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jce;
+package main.java.Frms;
 
 /**
  *
  * @author Mary
  */
-public class main_menu extends javax.swing.JFrame {
+public class frmPrincipal extends javax.swing.JFrame {
 
     /**
-     * Creates new form main_menu
+     * Creates new form frmPrincipal
      */
-    public main_menu() {
+    public frmPrincipal() {
         initComponents();
     }
 
@@ -911,6 +911,11 @@ public class main_menu extends javax.swing.JFrame {
 
         itemSalir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         itemSalir.setText("Salir");
+        itemSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemSalirActionPerformed(evt);
+            }
+        });
         menuArchivo.add(itemSalir);
 
         jMenuBar1.add(menuArchivo);
@@ -997,6 +1002,10 @@ public class main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itmConsultarPartidosActionPerformed
 
+    private void itemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_itemSalirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1014,20 +1023,20 @@ public class main_menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(main_menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(main_menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(main_menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(main_menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new main_menu().setVisible(true);
+                new frmPrincipal().setVisible(true);
             }
         });
     }

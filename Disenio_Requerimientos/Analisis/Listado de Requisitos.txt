@@ -1,0 +1,7 @@
+Funcionales:
+1) El sistema permitira el mantenimiento de partidos.
+2) El sistema permitira el mantenimiento de provincias.
+3) El sistema permitira el mantenimiento de municipios.
+4) El sistema permitira el mantenimiento de colegios.
+5) 
+No Funcionales:

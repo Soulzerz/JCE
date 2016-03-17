@@ -1176,6 +1176,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Partidos"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itmGestionarPartidosActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>

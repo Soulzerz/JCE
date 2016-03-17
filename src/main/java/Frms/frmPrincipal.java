@@ -931,6 +931,11 @@ public class frmPrincipal extends javax.swing.JFrame {
         menuGestionar.add(itmGestionarMunicipios);
 
         itmGestionarPartidos.setText("Partidos");
+        itmGestionarPartidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmGestionarPartidosActionPerformed(evt);
+            }
+        });
         menuGestionar.add(itmGestionarPartidos);
 
         jMenu2.add(menuGestionar);
@@ -1005,6 +1010,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void itemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_itemSalirActionPerformed
+
+    private void itmGestionarPartidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmGestionarPartidosActionPerformed
+        new frmGestonarPartidos().setVisible(true);
+    }//GEN-LAST:event_itmGestionarPartidosActionPerformed
 
     /**
      * @param args the command line arguments

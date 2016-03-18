@@ -9,12 +9,17 @@ package main.java.Frms;
  *
  * @author developer
  */
+import main.java.Contexto.ContextoPartido;
+import main.java.modelos.Partido;
 public class frmGestonarPartidos extends javax.swing.JFrame {
 
     /**
      * Creates new form frmGestonarPartidos
      */
+    private long id=0;
+    private ContextoPartido partidos;
     public frmGestonarPartidos() {
+        this.partidos = new ContextoPartido();
         initComponents();
     }
 
@@ -62,6 +67,11 @@ public class frmGestonarPartidos extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblPartidos);
 
         btnAgregar1.setText("Agregar");
+        btnAgregar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregar1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -102,6 +112,20 @@ public class frmGestonarPartidos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAgregar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregar1ActionPerformed
+        if(this.tblPartidos.getSelectedRow()<0)
+        {
+            Partido nuevoPartido = new Partido();
+            try
+            {
+            }
+            catch(Exception ex)
+            {
+                
+            }
+        }
+    }//GEN-LAST:event_btnAgregar1ActionPerformed
 
     /**
      * @param args the command line arguments
